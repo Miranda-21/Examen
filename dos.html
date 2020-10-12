@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+<body bgcolor="#cb7e7c">
+<center>
+<title>Validar si la contraseña y la repeticion de la contraseña son iguales</title>
+<link rel="stylesheet" type="text/css" href="Miranda.css">
+<script>
+function comprobarClave(){
+clave1= document.f1.clave1.value
+clave2= document.f1.clave2.value
+
+if(clave1=="sarai" && clave2=="ruiz"){
+	alert("Los datos Coinciden...\n Bienvenido");
+	var href ="https://miranda-21.github.io/Bimestre-4/";
+	window.location=href;
+}
+else{
+	alert("Las dos claves son distintas...\n Intentelo nuevamente.");
+	var href="dos.html";
+	window.location=href;
+};
+
+}
+</script>
+</head>
+<body>
+	<h1>Validar si la contraseña y la repeticion de la contraseña son iguales</h1>
+	<br>
+	<h1>Escribe una supuesta contraseña dos veces, una en cada campo, una de cada campo, y pulsa el boton. Javascript te dira si las dos son iguales</h1
+	<br>
+	<form action=""name="f1">
+	<h2>contraseña: <input type="password" name="clave1" size="20"></h2>
+	<br>
+	<h2>repite contraseña: <input type="password" name="clave2" size="20"></h2>
+	<br>
+	<input type="button" value="Comprobar si son iguales" onClick="comprobarClave()">
+</form>
+</body>
+</html>
